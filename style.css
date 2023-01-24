@@ -1,0 +1,71 @@
+body{
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h1{
+    font-size: 100px;
+    color: aliceblue;
+    backdrop-filter: brightness(50%);
+    letter-spacing: 4px;
+}
+
+.btn{
+    background-color: black;
+    color: white;
+    padding: 20px 40px;
+    font-size: 25px;
+    border: 4px solid;
+    cursor:pointer;
+    transition: 1s background-color;
+    white-space: nowrap;
+}
+
+.btn:hover{
+    background-color: white;
+    color: black;
+}
+
+.split{
+    width: 50%;
+    height: 100%;
+    top: 0;
+}
+
+.split.left{
+    position: absolute;
+    left: 0;
+    background-color: burlywood;
+    background-image: url(https://thaysrx.com.br/wp-content/uploads/2022/01/iphone-13-pro-max-gold-select.png);
+    background-size: cover;
+}
+
+.split.right{
+    position: absolute;
+    right: 0;
+    background-color: aquamarine;
+    background-image: url(https://cdn.shopify.com/s/files/1/2700/1230/products/1.B0Burgundy-TraseirafrenteeSPen_ebac63d6-5deb-424f-bf94-26901c5622e2_1024x1024.jpg?v=1644232988);
+    background-size: cover;
+}
+
+.active-left .left{
+    width: 75%;
+}
+.active-left .right{
+    width: 25%;
+}
+.active-right .left{
+    width: 25%;
+}
+.active-right .right{
+    width: 75%;
+}
+
+.left , .right{
+    transition: width 2s ease-in-out;
+}
